@@ -1,6 +1,10 @@
 # ENSF 400 - Assignment 3 - Kubernetes
 
 ## Steps
+0. **Start Kubernetes**
+
+minikube start
+minikube addons enable ingress
 
 1. **Create the Deployment for nginx:**
 
@@ -32,5 +36,6 @@ kubectl apply -f app-2-ingress.yaml
 
 7. **Test the setup:**
 
-curl http://(minikubeip)/curlhttp://(minikube ip)/app
+curl http://$(minikube ip)/
+curl http://$(minikube ip)/
 
